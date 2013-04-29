@@ -1,0 +1,32 @@
+<html>
+<head>
+<script src="http://www.java.com/js/deployJava.js"></script>
+<script>    
+    var attributes = { id:'cacheApplet', code:'tac.dev.CacheApplet',  width:1, height:1, archive:'applet-cache.jar'};
+    var parameters = { } ;
+    deployJava.runApplet(attributes, parameters, '1.6');
+</script>
+<script>
+    function setValue(){
+        var key = prompt('Enter key','test');
+        var value = prompt('Enter value','test-value');
+        cacheApplet.setValue('someMap', key, value);
+    }
+   </script>
+<script>
+    function displayValue(){
+        var key = prompt('Enter key','test');
+        var value = cacheApplet.getValue('someMap', key);
+
+        alert('key \'' + key + '\' has value \'' + value + '\'');
+    }
+   </script>
+</head>
+<body>
+	here it is...
+	<div id='scriptWindow'>
+	    <a onclick='setValue()'>set map value</a><br>
+		<a onclick='displayValue()'>get map value</a><br>
+	</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.smarttab</groupId>
+	<artifactId>smarttab-cache</artifactId>
+	<packaging>pom</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>parent pom for smarttab cache</name>
+	<properties>
+		<keystore>${user.home}/keystore.jks</keystore>
+		<alias>tcellucci</alias>
+		<storepass>volcano1</storepass>
+		<keypass>volcano1</keypass>
+	</properties>
+	<modules>
+		<module>smarttab-applet</module>
+		<module>smarttab-web</module>
+	</modules>
+
+</project>
