@@ -64,13 +64,19 @@
           </execution>
         </executions>
         <configuration>
-          <keystore>${user.home}/keystore.jks</keystore>
-          <alias>tcellucci</alias>
-          <storepass>volcano1</storepass>
-          <keypass>volcano1</keypass>
+          <keystore>${keystore}</keystore>
+          <alias>${alias}</alias>
+          <storepass>${storepass}</storepass>
+          <keypass>${keypass}</keypass>
         </configuration>
       </plugin>
     </plugins>
   </build>
+  <properties>
+    <keypass>volcano1</keypass>
+    <alias>tcellucci</alias>
+    <keystore>${user.home}/keystore.jks</keystore>
+    <storepass>volcano1</storepass>
+  </properties>
 </project>
 

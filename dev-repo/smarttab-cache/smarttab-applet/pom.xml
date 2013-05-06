@@ -6,6 +6,13 @@
 	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SmartTab Caching Applet</name>
+        <properties>
+                <keystore>${user.home}/keystore.jks</keystore>
+                <alias>tcellucci</alias>
+                <storepass>volcano1</storepass>
+                <keypass>volcano1</keypass>
+        </properties>
+
 	<build>
 		<plugins>
 			<plugin>
